@@ -23,8 +23,8 @@ services:
       - "--web.enable-admin-api"
     ports:
       - 9090:9090
-    depends_on:
-      - cadvisor
+    # depends_on:
+    #   - cadvisor
     networks:
       - monitor-net
     deploy:
